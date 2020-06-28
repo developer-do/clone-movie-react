@@ -1,0 +1,1 @@
+2020/06/28 23:42:08 [error] 32177#32177: *59087 directory index of "/home/clone_react/clone_movie/" is forbidden, client: 14.5.163.109, server: clonereact.dev-do.co.kr, request: "GET /clone_movie/ HTTP/1.1", host: "clone_react.dev-do.co.kr"
