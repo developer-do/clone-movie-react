@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
-function Food(props) {
-  console.log(props);
-  return <h1>I like potato {props.fav} {props.papapapa[0]} {props.papapapa[1]}</h1>;
+function Food({fav}) {
+  return <h1>I like {fav}</h1>;
 }
 
 class App extends Component {
@@ -10,7 +9,10 @@ class App extends Component {
     return (
       <div>
         <h1>Hello</h1>
-        <Food fav="김치" something={true} papapapa={['hello', 1, 2, 3, 4, true]}/>
+        <Food fav="김치" />
+        <Food fav="라면" />
+        <Food fav="삼겹살" />
+        <Food fav="청국장" />
         
       </div>
     );
