@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
-import Home from './routes/Home';
+import React from 'react';
 import './App.css';
+import { HashRouter, Route } from 'react-router-dom';
+import About from './routes/About';
+import Home from './routes/Home';
 
-class App extends React.Component {
-  state = {
-    isLoading: true,
-    movies: [],
-  };
-
-
-  render() {
-    return <Home />
-  }
+function App() {
+  return (
+    <HashRouter>
+      <Route path="/" exact={true} component={Home} ></Route>
+      <Route path="/about" component={About} ></Route>
+    </HashRouter>
+  );
 }
 
 export default App;
