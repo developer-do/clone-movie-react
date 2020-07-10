@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
-import Movies from '../component/Movie';
+import Movies from '../components/Movie';
 import './Home.css';
 
 class Home extends React.Component {
